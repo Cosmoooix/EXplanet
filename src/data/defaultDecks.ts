@@ -1,0 +1,80 @@
+import { RecallDeck } from '../types/game';
+
+export const DEFAULT_DECKS: RecallDeck[] = [
+  {
+    id: 'deck_bio_photosynthesis',
+    title: 'Biology: Cell Structure & Photosynthesis',
+    subject: 'Science',
+    description: 'Core concepts in plant cell biology, energy conversion, and organelles.',
+    sourceText: 'Photosynthesis is the process by which plants convert sunlight into chemical energy. The light reactions occur in the thylakoid membranes of chloroplasts, producing ATP and NADPH. Mitochondria are the powerhouse of the cell, generating cellular ATP through respiration. The cell wall in plants provides rigid structural support and is composed of cellulose fibers.',
+    createdAt: Date.now() - 86400000 * 2,
+    cards: [
+      {
+        id: 'c_bio_1',
+        front: 'Photosynthesis is the process by which plants convert ______ into chemical energy.',
+        back: 'sunlight',
+        clozeWords: ['sunlight'],
+        reviewedCount: 3,
+        correctCount: 3,
+      },
+      {
+        id: 'c_bio_2',
+        front: 'The light reactions of photosynthesis occur in the ______ membranes of chloroplasts.',
+        back: 'thylakoid',
+        clozeWords: ['thylakoid'],
+        reviewedCount: 2,
+        correctCount: 2,
+      },
+      {
+        id: 'c_bio_3',
+        front: '______ are known as the powerhouse of the cell, generating cellular energy (ATP).',
+        back: 'Mitochondria',
+        clozeWords: ['Mitochondria'],
+        reviewedCount: 4,
+        correctCount: 4,
+      },
+      {
+        id: 'c_bio_4',
+        front: 'The plant cell wall is composed primarily of tough ______ fibers.',
+        back: 'cellulose',
+        clozeWords: ['cellulose'],
+        reviewedCount: 1,
+        correctCount: 1,
+      },
+    ],
+  },
+  {
+    id: 'deck_astronomy_deep_space',
+    title: 'Space & Astronomy Notes',
+    subject: 'Science',
+    description: 'Astronomical units, star lifecycles, and galactic geography.',
+    sourceText: 'A light-year is the distance that light travels in a vacuum in one Julian year, approximately 9.46 trillion kilometers. A supernova is the catastrophic explosion of a massive star at the end of its life cycle. The event horizon is the boundary surrounding a black hole from which escape velocity exceeds the speed of light. The Sun is a G-type main-sequence yellow dwarf star.',
+    createdAt: Date.now() - 86400000,
+    cards: [
+      {
+        id: 'c_astro_1',
+        front: 'A ______ is the distance that light travels in a vacuum in one Julian year (approx. 9.46 trillion km).',
+        back: 'light-year',
+        clozeWords: ['light-year'],
+        reviewedCount: 1,
+        correctCount: 1,
+      },
+      {
+        id: 'c_astro_2',
+        front: 'A ______ is the catastrophic explosion marking the final stage in the lifecycle of a massive star.',
+        back: 'supernova',
+        clozeWords: ['supernova'],
+        reviewedCount: 2,
+        correctCount: 1,
+      },
+      {
+        id: 'c_astro_3',
+        front: 'The ______ horizon is the gravitational boundary of a black hole where escape velocity equals light speed.',
+        back: 'event',
+        clozeWords: ['event'],
+        reviewedCount: 3,
+        correctCount: 3,
+      },
+    ],
+  },
+];
